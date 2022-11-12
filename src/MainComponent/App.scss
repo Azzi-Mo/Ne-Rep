@@ -1,4 +1,4 @@
-*
+*,*::before,*::after
 {
     // border: 1px solid blue ;
     box-sizing: border-box;
@@ -10,7 +10,8 @@
     border: 1px solid red;
     display: grid;
     justify-content: center;
-    align-items: center;
+    position: relative;
+
 
 
 }
