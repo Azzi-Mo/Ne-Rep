@@ -1,0 +1,52 @@
+
+
+// sys sass
+
+@mixin media($var) {
+    @if $var == mobile {
+      @media only screen and (max-width: 480px) {
+        @content;
+      }
+    }
+  
+    @if $var == Tablet {
+      @media (min-width: 481px) and (max-width: 767px) {
+        @content;
+      }
+    }
+  
+    @if $var == Ipad {
+      @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+      }
+    }
+  
+    @if $var == Lab_top {
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        @content;
+      }
+    }
+  
+    @if $var == large_screen {
+      @media only screen and (min-width: 1281px) {
+        @content;
+      }
+    }
+  
+  
+  }
+
+  @include media(mobile){
+
+      .sec_MainPage
+      {
+      
+          width: 100%;
+          border: 1px solid rgb(17, 0, 255);
+      
+      }
+}
+
+
+
+
