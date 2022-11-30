@@ -1,7 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import {Dta} from './GetData'
-// type value 
-// value come to setelemt
 
 function UI() {
 
@@ -11,11 +9,7 @@ const value = useContext(Dta)
   return (
     <>
      
-     <form onSubmit={sh}>
-            <input onChange={(e) => setElemet(e.target.value)}></input>
-    
-            <button>submit</button>
-          </form>
+       <h1>{value.login}</h1>
 
     </>
   );
@@ -27,3 +21,16 @@ const value = useContext(Dta)
 export default UI;
 
 
+
+// function TestD()
+// {
+//   const value = useContext(Dta)
+//   return (
+//     <>
+
+//      <h1>hi {value.title}</h1>
+
+//     </>
+//   )
+// }
+// export default TestD

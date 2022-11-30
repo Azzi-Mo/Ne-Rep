@@ -12,12 +12,12 @@ import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 // import Component
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
+import Main from './Pages/GetData'
 root.render(
   <React.StrictMode>
     <BrowserRouter>
     
-
+      <Main/>
 
     </BrowserRouter>
   </React.StrictMode>
