@@ -7,7 +7,7 @@ function UI() {
     <>
       <div className="box2_ch1"></div>
       <div className="box2_ch2">
-        <div></div>
+        <div className="space"></div>
       </div>
     </>
   );

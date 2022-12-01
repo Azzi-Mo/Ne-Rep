@@ -45,7 +45,7 @@
     justify-content: center;
     align-items: center;
     .Box {
-      width: 550px;
+      width: 380px;
       height: 500px;
       // border: 1px solid red;
       display: grid;
@@ -60,6 +60,7 @@
       border-radius: 10px;
       overflow: hidden;
       // padding: 0 20px;
+      font-size: 14px;
 
       form {
         width: 100%;
@@ -109,7 +110,7 @@
       border-radius: 10px;
       overflow: hidden;
       display: grid;
-      grid-template-rows: [] 55%[] 45%;
+      grid-template-rows: [] 50%[] 50%;
       .box2_ch1 {
         border: 1px solid rgb(0, 255, 13);
       }
@@ -120,7 +121,6 @@
   }
 }
 
-
 @include media(Tablet) {
   .sec_contain {
     border: 1px solid rgb(0, 255, 13);
@@ -128,7 +128,7 @@
     justify-content: center;
     align-items: center;
     .Box {
-      width: 550px;
+      width: 450px;
       height: 500px;
       // border: 1px solid red;
       display: grid;
@@ -185,6 +185,7 @@
       }
     }
     .ch_box2 {
+      padding: 0 10px;
       grid-row: 3/4;
       // border: 1px solid red;
       // padding: 0 20px;
@@ -193,11 +194,17 @@
       overflow: hidden;
       display: grid;
       grid-template-rows: [] 40%[] 60%;
+
       .box2_ch1 {
         border: 1px solid rgb(0, 255, 13);
       }
       .box2_ch2 {
         border: 1px solid rgb(0, 110, 255);
+        display: grid;
+        grid-template-columns: [] 30% [] 70%;
+        .space {
+          border: 1px solid rgb(60, 255, 0);
+        }
       }
     }
   }
