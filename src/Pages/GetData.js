@@ -1,5 +1,7 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext,useState } from "react";
 import UI from "./FileUIDesign";
+import "./GetData.scss";
+export const Dta = createContext();
 function GetData() {
   const [elemet, setElemet] = useState("");
   const [urle, setUrle] = useState("");
@@ -16,15 +18,25 @@ function GetData() {
 
   return (
     <>
-      <section>
+      <section style={{ height: window.innerHeight }} className="sec_contain">
         <Dta.Provider value={urle}>
-          <form onSubmit={sh}>
-            <input onChange={(e) => setElemet(e.target.value)}></input>
+          <div className="Box">
 
-            <button>submit</button>
-          </form>
+            <section className="ch_box1">
+              <form onSubmit={sh}>
+                <i className="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="search githup username" onChange={(e) => setElemet(e.target.value)}></input>
 
-          <UI />
+                <button>Search</button>
+              </form>
+            </section>
+
+            <section className="ch_box2">
+              <UI />
+            </section>
+
+            
+          </div>
         </Dta.Provider>
       </section>
     </>

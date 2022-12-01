@@ -1,26 +1,18 @@
 import { useContext, useEffect, useState } from "react";
-import {Dta} from './GetData'
+import { Dta } from "./GetData";
 
 function UI() {
-
-
-  
-const value = useContext(Dta)
+  const value = useContext(Dta);
   return (
     <>
-     
-       <h1>{value.login}</h1>
-
+      <div className="box2_ch1"></div>
+      <div className="box2_ch2">
+        <div></div>
+      </div>
     </>
   );
-
-
-
-
 }
 export default UI;
-
-
 
 // function TestD()
 // {

@@ -11,13 +11,13 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 // import Component
+import GetData from '../src/Pages/GetData'
 const root = ReactDOM.createRoot(document.getElementById("root"));
-import Main from './Pages/GetData'
 root.render(
   <React.StrictMode>
     <BrowserRouter>
     
-      <Main/>
+      <GetData/>
 
     </BrowserRouter>
   </React.StrictMode>
