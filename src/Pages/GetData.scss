@@ -122,6 +122,7 @@
 }
 
 @include media(Tablet) {
+  
   .sec_contain {
     border: 1px solid rgb(0, 255, 13);
     display: grid;
@@ -143,6 +144,7 @@
       border-radius: 10px;
       overflow: hidden;
       // padding: 0 20px;
+      font-size: 14px;
 
       form {
         width: 100%;
@@ -185,7 +187,6 @@
       }
     }
     .ch_box2 {
-      padding: 0 10px;
       grid-row: 3/4;
       // border: 1px solid red;
       // padding: 0 20px;
@@ -193,19 +194,34 @@
       border-radius: 10px;
       overflow: hidden;
       display: grid;
-      grid-template-rows: [] 40%[] 60%;
-
+      grid-template-rows: [] 50%[] 50%;
       .box2_ch1 {
         border: 1px solid rgb(0, 255, 13);
+        .sec_img_user{
+
+
+          display: grid;
+          grid-template-columns: [] 30% [] 70%;
+          position: relative;
+          .img_sec
+          {
+            border: 1px solid rgb(68, 255, 0);
+            height: 100%;
+            position: absolute;
+
+          }
+          .user_sec
+          {
+            border: 1px solid rgb(255, 0, 0);
+            height: 100%;
+
+          }
+        }
       }
       .box2_ch2 {
         border: 1px solid rgb(0, 110, 255);
-        display: grid;
-        grid-template-columns: [] 30% [] 70%;
-        .space {
-          border: 1px solid rgb(60, 255, 0);
-        }
       }
     }
   }
+
 }
